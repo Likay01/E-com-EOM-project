@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@1,200&family=Poppins:ital,wght@0,200;0,300;1,300&family=Roboto:ital,wght@0,300;0,400;1,100;1,500&display=swap');
+*,
+*::after
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://i.postimg.cc/fbkdgFks/The-Real-Story-of-Record-Store-Day.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+img{
+    width: 5rem;
+}
+.navbar{
+    background-color: rgba(42, 42, 42, 0.769);
+    padding-top: 0;
+    padding-bottom: 0;    
+}
+
+.container{
+    justify-self: end;
+    padding-left: 0;
+    padding-right: 0;
+}
+i{
+    color: rgb(180, 176, 176);
+    justify-content: space-between;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(7, 213px);
+    grid-template-rows: repeat(5, 130px);
+    grid-auto-rows: 200px;
+    grid-gap:5px;
+    padding-top: 20px;
+}
+.grid1{
+    grid-column-start: 2;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    
+}
+.ad-text{
+    color: rgb(0, 0, 0);
+    background-color: rgba(78, 78, 78, 0.644);
+}
+.Albums{
+    padding-top: 10px;
+justify-content: center;
+background-color: rgba(54, 54, 54, 0.879);
+padding-bottom: 10px;
+}
+footer{
+   text-align: center;
+    background-color: rgba(77, 77, 77, 0.701);
+    color: rgb(0, 0, 0);
+}
+.card{
+    background-color: rgba(0, 0, 0, 0.733);
+    color: rgb(168, 168, 168);
+}
+p{
+    color: rgb(255, 255, 255);
+}
+.btn{
+background-color: rgb(195, 12, 12);
+color: white;
+}
+.grid-container2{
+    display: grid;
+    grid-template-columns: repeat(8, 212px);
+    grid-template-rows: repeat(5, 119px);
+    grid-auto-rows: 200px;
+    grid-gap:5px;
+    
+}
+.grid-block{
+    background-color: rgba(0, 0, 0, 0.806);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+h2{
+    color: rgb(255, 5, 5);
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    text-align: center;
+    font-size: large;
+    padding-top: 30%;
+
+}
+.Profile{
+    width: 7rem;
+    border-radius: 50%;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin: auto;
+}
+.table{
+    grid-column-start: 2;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    padding-top: 2px;
+    background-color: rgba(0, 0, 0, 0.744);
+    border-radius: 20px;
+    color: white;
+    margin-top: 20px;
+}
+.addpic{
+    width: 3rem;
+}
+.butt{
+border-radius: 10px;
+width: 5rem;
+}
+.butt:hover{
+    background-color: black;
+    color: white;
+}
+.del{
+    border-radius: 10px;
+    width: 5rem;
+    background-color: rgb(45, 45, 45);
+    color: white;
+    }
+    .del:hover{
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+    }
