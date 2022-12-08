@@ -66,7 +66,7 @@ function display(){
           <h3 class="card-title">${album.VinylsTitle}</h3>
           <h5 class="card-name">${album.VInylName}</h5>
           <p class="card-text">Price: R ${album.VinylPrice}</p>
-          <a href="#" class="btn">Purchase</a>
+          <a  class="btn">Purchase</a>
         </div>
       </div>`
     })

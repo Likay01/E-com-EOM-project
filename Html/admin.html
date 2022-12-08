@@ -23,7 +23,7 @@
               <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-lg-auto mb-2">
                   <li class="nav-item">
-                    <a class="nav-link" href="./Html/admin.html"><i class="fa-regular fa-user"></i></a>
+                    <a class="nav-link" href="../Html/admin.html"><i class="fa-regular fa-user"></i></a>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="./Checkout.html"><i class="fa-regular fa-credit-card"></i></i></a>
@@ -40,6 +40,7 @@
   </div>
   <img class="Profile" src="https://i.postimg.cc/XqZmprKq/User-Icon-Vector-Illustration-In-Glyph-Style-For-Any-Purpose.jpg" alt="profile">
   <h2>Admin page</h2>
+  <div class="g-block"></div>
   <!-- table  -->
   <table class="table">
     <thead>
@@ -48,14 +49,51 @@
         <th scope="col">Cover</th>
         <th scope="col">Vinyl</th>
         <th scope="col">Price</th>
-        <th scope="col"><button type="button" class="add btn btn-secondary">Add</button></th>
+        <th scope="col"><button type="button" class="add btn btn-secondary"  data-bs-toggle="modal" data-bs-target="#Ad-popup">Add</button></th>
       </tr>
     </thead>
     <tbody class="content">
     </tbody>
   </table>
+  <!--Add Modal -->
+<div class="modal fade" id="Ad-popup" tabindex="-1" aria-labelledby="Ad-popupLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-black text-white">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="Ad-popupLabel">Add Product</h1>
+        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">NO.</label>
+          <input type="number" class="form-control text-danger" id="Vinyltitle" placeholder="eg. number" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Vynil cover</label>
+          <input type="text" class="form-control text-danger" id="Vinyltitle" placeholder="eg. URL">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Vinyl Name</label>
+          <input type="text" class="form-control text-danger" id="Vinyltitle" placeholder="eg. Certified Loverboy" required>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Artist</label>
+          <input type="text" class="form-control text-danger" id="Artists" placeholder="eg. Drake">
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label">Price</label>
+          <input type="number" class="form-control text-danger" id="Pricing" placeholder="R" required>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+        <button type="button" class="confirm btn btn-primary">Confirm</button>
+      </div>
+    </div>
+  </div>
 </div>
-
+</div>
     </main>
     <footer>Copyright &copy; 2022</footer>
     <!-- JavaScript Bundle with Popper -->

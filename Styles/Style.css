@@ -71,6 +71,8 @@ p{
 background-color: rgb(195, 12, 12);
 color: white;
 }
+
+/* Admin  */
 .grid-container2{
     display: grid;
     grid-template-columns: repeat(8, 212px);
@@ -84,6 +86,12 @@ color: white;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
+    grid-row-end: 6;
+}
+.g-block{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
     grid-row-end: 6;
 }
 h2{
@@ -137,3 +145,98 @@ width: 5rem;
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
     }
+
+/* Checkout */
+.grid-container3{
+    display: grid;
+    grid-template-columns: repeat(7, 212px);
+    grid-template-rows: repeat(5, 119px);
+    grid-auto-rows: 200px;
+    grid-gap:5px;
+}
+
+h4{
+    padding: 5px;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.t2{
+    background-color: rgba(150, 150, 150, 0.167);
+    color: black;
+    margin-top: 50px;
+grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end: 6;
+}
+.layout{
+    background-color: rgba(150, 150, 150, 0.877);
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+.check{
+    background-color: rgba(249, 249, 249, 0.877);
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 5;  
+}
+.co-head{
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    text-align: center;
+}
+.sent1{
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    text-align: center;
+    color: black;
+}
+.sent2{
+    padding: 50px;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    text-align: center;
+    color: black;
+}
+.sent3{
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+    color: black;
+}
+.sent4{
+    padding-top: 50px;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    text-align: center;
+    color: black;
+}
+.newer{
+    padding-top: 50px;
+    grid-column-start: 3;
+    grid-column-end: 8;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.new{
+    color: black;
+    padding-right: 10px;
+    
+}

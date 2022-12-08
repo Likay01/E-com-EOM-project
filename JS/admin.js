@@ -74,6 +74,34 @@ displayAdjustments();
 localStorage.setItem('content', JSON.stringify(admin));
 
 // delete button 
-function Erase(){
-    document.querySelector(".content").deleteRow(0);
+function Erase(id) {
+localStorage.setItem('content', JSON.stringify(admin));
+document.querySelector('#del');
+admin.splice(id-1, 1)
+localStorage.setItem('content', JSON.stringify(admin))
 }
+
+
+
+// Add button 
+// add event listener 
+admin.addEventListener('click',(e)=>{
+e.preventDefault();
+let title = document.querySelector('#VinylsTitle').value;
+let artist = document.querySelector('#VInylName').value;
+let price = document.querySelector('#VinylPrice').value;
+
+
+// Push an Object into an array 
+admin.push(
+    {
+        id,
+        VinylImage,
+        VinylsTitle,
+        VInylName,
+        VinylPrice
+    }
+)
+localStorage.setItem('content', JSON.stringify(admin));
+})
+;
