@@ -11,6 +11,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
+    overflow-y: scroll;
 }
 img{
     width: 5rem;
@@ -56,13 +57,13 @@ background-color: rgba(54, 54, 54, 0.879);
 padding-bottom: 10px;
 }
 footer{
-    position: fixed;
+    position: static;
    text-align: center;
     background-color: rgba(77, 77, 77, 0.701);
     color: rgb(0, 0, 0);
     align-items: baseline;
     width: 100%;
-    padding-top:;
+    padding-bottom:30px;
 }
 .card{
     background-color: rgba(0, 0, 0, 0.733);
@@ -80,7 +81,7 @@ color: white;
 .grid-container2{
     display: grid;
     grid-template-columns: repeat(8, 212px);
-    grid-template-rows: repeat(5, 119px);
+    grid-template-rows: repeat(, 119px);
     grid-auto-rows: 200px;
     grid-gap:5px;
     
@@ -156,11 +157,12 @@ width: 5rem;
     display: grid;
     grid-template-columns: repeat(7, 212px);
     grid-template-rows: repeat(5, 119px);
-    grid-auto-rows: 200px;
+    grid-auto-rows: 100;
     grid-gap:5px;
 }
 
 h4{
+    color: white;
     padding: 5px;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -168,20 +170,20 @@ h4{
     grid-row-end: 2;
 }
 .t2{
-    background-color: rgba(150, 150, 150, 0.167);
+    background-color: rgba(247, 247, 247, 0.826);
     color: black;
     margin-top: 50px;
 grid-column-start: 1;
 grid-column-end: 3;
 grid-row-start: 1;
-grid-row-end: 6;
+grid-row-end: 8;
 }
 .layout{
-    background-color: rgba(150, 150, 150, 0.877);
+    background-color: rgba(62, 60, 60, 0.874);
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 6;
+    grid-row-end: 1;
 }
 .check{
     background-color: rgba(249, 249, 249, 0.877);

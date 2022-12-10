@@ -66,7 +66,7 @@ function display(){
           <h3 class="card-title">${album.VinylsTitle}</h3>
           <h5 class="card-name">${album.VInylName}</h5>
           <p class="card-text">Price: R ${album.VinylPrice}</p>
-          <a  class="btn">Purchase</a>
+          <a id="Rec" class="btn">Purchase</a>
         </div>
       </div>`
     })
@@ -74,3 +74,16 @@ function display(){
 display();
 
 localStorage.setItem('Albums', JSON.stringify(Vinyl));
+
+let  PurchaseBtn = [];
+localStorage.setItem('checkoutProd', JSON.stringify(PurchaseBtn))
+
+let Rec = [...document.querySelectorAll('#Rec')];
+
+Object.keys(Rec).forEach((Spin)=> {
+    Rec[Spin].addEventListener('click',(e)=>{
+        e.preventDefault();
+    PurchaseBtn.push(Vinyl[Spin]);
+    localStorage.setItem('checkoutProd', JSON.stringify(PurchaseBtn))
+  })
+})

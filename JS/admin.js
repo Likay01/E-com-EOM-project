@@ -86,7 +86,6 @@ location.reload()
 
 // Add button 
 let confirm= document.querySelector('.confirm') 
-console.log(confirm.outerHTML)
 confirm.addEventListener('click',(e)=>{
 e.preventDefault();
 
